@@ -21,7 +21,7 @@ const (
 )
 
 type GoReport struct {
-	Records   []interface{}
+	Records   map[string]string // []interface{}
 	DataPos   int
 	Bands     map[string]*Band
 	Converter *Converter
